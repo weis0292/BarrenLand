@@ -10,11 +10,11 @@ The **MikeWeispfenning.BarrenLandAnalysis** project contains everything needed t
 
 The **MikeWeispfenning.BarrenLandAnalysis.Application** project is a console application that basically satisfies the I/O requirements of the Barren Land Analysis, as defined in the provided Technical Assessment Case Study.
 
-The **MikeWeispfenning.BarrenLandAnalysis.Tests** project contains a collection of Unit and Itegramtion tests that verify the other two projects are working as intended.
+The **MikeWeispfenning.BarrenLandAnalysis.Tests** project contains a collection of Unit and Itegration tests that verify the other two projects are working as intended.
 
 ## Building The Application
 
-The application was built using Visual Studio 2017.  The only dependencies the application has are on the Microsoft .NET framework (v4.6.1) and the Microsoft MSTest framework.
+The application was built using Visual Studio 2017.  The only dependencies the application has are on the Microsoft .NET framework (v4.6.1) and the Microsoft MSTest framework.  For logging, the log4net NuGet package is used.
 
 ## Running The Application
 

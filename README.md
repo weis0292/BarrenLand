@@ -14,7 +14,7 @@ The **MikeWeispfenning.BarrenLandAnalysis.Tests** project contains a collection 
 
 ## Building The Application
 
-The application was built using Visual Studio 2017.  The only dependencies the application has are on the Microsoft .NET framework (v4.6.1) and the Microsoft MSTest framework.  For logging, the log4net NuGet package is used.
+The application was built using Visual Studio 2017.  The only dependencies the application has are on the Microsoft .NET framework (v4.6.1) and the Microsoft MSTest framework.  For logging, the [log4net NuGet package](https://www.nuget.org/packages/log4net/ "log4net") is used.
 
 ## Running The Application
 

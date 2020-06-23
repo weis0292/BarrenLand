@@ -9,19 +9,19 @@ namespace MikeWeispfenning.BarrenLandAnalysis.Application.Factories
     /// </summary>
     public class LandFactory : ILandFactory
     {
-		private static readonly ILog _logger = LogManager.GetLogger(typeof(LandFactory));
+        private static readonly ILog _logger = LogManager.GetLogger(typeof(LandFactory));
 
-		/// <summary>
-		/// Creates a Land object using the rectangle provided to define the outside of the land
-		/// </summary>
-		/// <param name="landDefinition">The rectangle that defines the outside of the land</param>
-		/// <returns>Returns a land object</returns>
-		public ILand CreateLand(Rectangle landDefinition)
+        /// <summary>
+        /// Creates a Land object using the rectangle provided to define the outside of the land
+        /// </summary>
+        /// <param name="landDefinition">The rectangle that defines the outside of the land</param>
+        /// <returns>Returns a land object</returns>
+        public ILand CreateLand(Rectangle landDefinition)
         {
-			_logger.Debug($"Entering {nameof(CreateLand)} with {nameof(landDefinition)} = {landDefinition}");
+            _logger.Debug($"Entering {nameof(CreateLand)} with {nameof(landDefinition)} = {landDefinition}");
 
-			// Create the square meters to be used in the land.
-			var columnsOfLand = landDefinition.XLength;
+            // Create the square meters to be used in the land.
+            var columnsOfLand = landDefinition.XLength;
             var rowsOfLand = landDefinition.YLength;
 
             ISquareMeter[,] squareMeters = new ISquareMeter[columnsOfLand, rowsOfLand];
@@ -33,7 +33,7 @@ namespace MikeWeispfenning.BarrenLandAnalysis.Application.Factories
                 }
             }
 
-			return new Land(squareMeters);
-		}
+            return new Land(squareMeters);
+        }
     }
 }

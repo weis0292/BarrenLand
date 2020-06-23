@@ -14,8 +14,8 @@ namespace MikeWeispfenning.BarrenLandAnalysis.Tests
             Assert.AreEqual(true, squareMeter.IsFertile);
         }
 
-		[TestMethod]
-		public void Should_BeBarren_When_SaltIsAdded()
+        [TestMethod]
+        public void Should_BeBarren_When_SaltIsAdded()
         {
             var squareMeter = new SquareMeter();
             squareMeter.AddSalt();

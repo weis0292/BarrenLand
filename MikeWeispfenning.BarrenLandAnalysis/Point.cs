@@ -7,7 +7,7 @@ namespace MikeWeispfenning.BarrenLandAnalysis
     /// </summary>
     public struct Point
     {
-		private static readonly ILog _logger = LogManager.GetLogger(typeof(Point));
+        private static readonly ILog _logger = LogManager.GetLogger(typeof(Point));
 
         /// <summary>
         /// The X value of the point
@@ -26,14 +26,14 @@ namespace MikeWeispfenning.BarrenLandAnalysis
         /// <param name="y">The desired Y value of the point</param>
         public Point(int x, int y)
         {
-			_logger.Debug($"Entering ctor with {nameof(x)} = {x} and {nameof(Y)} = {y}");
+            _logger.Debug($"Entering ctor with {nameof(x)} = {x} and {nameof(Y)} = {y}");
             X = x;
             Y = y;
         }
 
-		public override string ToString()
-		{
-			return $"{nameof(Point)}: {{ {X}, {Y} }}";
-		}
-	}
+        public override string ToString()
+        {
+            return $"{nameof(Point)}: {{ {X}, {Y} }}";
+        }
+    }
 }

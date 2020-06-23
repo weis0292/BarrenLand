@@ -7,22 +7,22 @@ namespace MikeWeispfenning.BarrenLandAnalysis
     /// </summary>
     public class SquareMeter : ISquareMeter
     {
-		/// <summary>
-		/// Returns if this square meter is still fertile.
-		/// </summary>
-		public bool IsFertile { get; private set; } = true;
+        /// <summary>
+        /// Returns if this square meter is still fertile.
+        /// </summary>
+        public bool IsFertile { get; private set; } = true;
 
         /// <summary>
         /// Adds salt to this entire square meter, rendering it barren.
         /// </summary>
         public void AddSalt()
         {
-			IsFertile = false;
+            IsFertile = false;
         }
 
-		public override string ToString()
-		{
-			return $"{nameof(SquareMeter)}: {nameof(IsFertile)} = {IsFertile};";
-		}
-	}
+        public override string ToString()
+        {
+            return $"{nameof(SquareMeter)}: {nameof(IsFertile)} = {IsFertile};";
+        }
+    }
 }

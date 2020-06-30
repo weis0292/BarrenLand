@@ -57,6 +57,7 @@ namespace MikeWeispfenning.BarrenLandAnalysis.Application
 				land.AddSalt(plotToSalt);
 			}
 
+			// This line satisfies the output requirements
 			string fertileLandAsOrderedString = string.Join(" ", land.FertilePlotsInSquareMeters.OrderBy(plot => plot));
 
 			_logger.Debug($"Exiting {nameof(GetFertileLandsAsOrderedString)} with a return value of \"{fertileLandAsOrderedString}\"");
